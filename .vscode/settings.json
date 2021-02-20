@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/96780d5f-a8ac-4699-8807-253388c3cfbc/resourceGroups/MeetingTimeKeeper/providers/Microsoft.Web/sites/MeetingTimeKeeper",
+    "appService.deploySubpath": "."
+}
