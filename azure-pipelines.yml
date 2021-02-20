@@ -6,8 +6,6 @@
 pr:
 - main
 
-pool: 'Lite'
-
 steps:
 - task: UseNode@1
   displayName: Use Node 12.x
