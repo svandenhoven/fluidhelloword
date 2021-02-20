@@ -27,5 +27,5 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs: 
-    PathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
-    ArtifactName: 'www' # output artifact named www
+    PathtoPublish: $(Build.ArtifactStagingDirectory)/dist 
+    ArtifactName: 'www' 
