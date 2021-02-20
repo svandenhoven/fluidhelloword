@@ -21,6 +21,7 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run build'
+
 - task: CopyFiles@1
   inputs:
     Contents: 'dist/**' 
@@ -29,3 +30,8 @@ steps:
   inputs: 
     PathtoPublish: $(Build.ArtifactStagingDirectory)/dist 
     ArtifactName: 'www' 
+  
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
